@@ -17,6 +17,7 @@ type ConfigMapFileReference struct {
 // The namespace must be specified at the point of use.
 type ConfigMapNameReference struct {
 	// name is the metadata.name of the referenced config map
+	// +optional
 	Name string `json:"name"`
 }
 
